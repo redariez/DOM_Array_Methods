@@ -41,6 +41,13 @@
     updateDOM();
  }
 
+ // Sort users by richest
+ function sortByRichest() {
+   data.sort((a, b) => b.money - a.money);
+
+   updateDOM();
+ }
+
  // Update Dom
  function updateDOM(provideData = data) {
    // Clea main div
